@@ -1,0 +1,175 @@
+:root{
+    --main_01: #ffffff;
+    --head_02: #ac0d0d;
+    --bloco_03: #a59c9c;
+}
+
+body{
+    background-color: var(--bloco_03);
+    margin: auto;
+    width: 75%;
+    position: relative;
+}
+
+.header {
+    background-color: #FFFFFF;
+    
+}
+
+ #logo{
+    text-align: center;
+    font-size: 45px;
+
+}
+
+.main ul{ 
+    background-color: var(--head_02);
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    height: 70px;
+    list-style: none;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.box a:hover{
+    transition: 0.5s;
+    background-color: var(--bloco_03);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.main a{
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.main li{
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.butoom{
+    border-bottom: var(--bloco_03);
+}
+
+.fundo {
+    background: url("../img/PizzariaFundo-03.webp") no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.containe{
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.containe img{
+    width: 30px;
+    height: 30px;
+}
+
+.box-1, .box-2, .box-3 {
+    width: 125px;
+    background-color: #ffffff;
+    padding: 30px;       
+    text-align: center;
+    font-size: 15px; 
+    border-radius: 10px ;
+    font-weight: bold;
+}
+
+.box-1 a, .box-2 a, .box-3 a {
+    text-decoration: none;
+    color: #000000;
+   
+}
+
+.box-1 a:hover, .box-2 a:hover, .box-3 a:hover {
+    color:var(--head_02)
+}
+
+.movimento{
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap; 
+    background-color: #d6c7c7;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.forma-pagamento{
+    
+   margin-right: 50px;  
+
+}
+
+.forma_pagamento li, img{
+    width: 200px;
+}
+
+.footer{
+    background-color: black;
+    text-align: center;
+    color: #ffffff;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.chamada {
+    height: 300px;
+    font-size: large;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chamada h2 {
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                 -1px 1px 0 #000,
+                 1px 1px 0 #000;
+}
+
+.chamada button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none; /* Adicione qualquer estilo de fundo necessário */
+    border: none; /* Adicione qualquer estilo de borda necessário */
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.chamada button img {
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    width: 40px;
+}
+
+.chamada button h3 {
+    margin: 0;
+}
+
+.chamada span{
+    font-size: 50px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+
+#fundo_c {
+    width: 100%;
+    height: auto;
+    background: url("../img/fundo_c.jpg");
+    
+    
+}
+
+#fundo_c img{
+    padding-right: 10px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+#fundo_c h2{
+    text-align: center;
+    font-size: 30px;
+    background-color: var(--bloco_03);
+    border-radius: 80px;   
+   
+}
+
+
+#P {
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 15px 0 0 0 #000, -5px 0 0 0 #000;
+    background: #000;
+    display: inline;
+    padding: 3px 0 !important;
+    position: relative;
+    color: #FFFFFF;
+    margin: 15px;
+    
+    
+
+}
+
+.teste {
+    background-color: #FFFFFF;
+    padding: 15px;
+    align-items:center;
+    display: flex;
+    margin-bottom: 20PX;
+    width: 40%;
+}
+
+#PizzaSalgada, #PizzaDoce, #Bebidas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+}
+
