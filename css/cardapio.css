@@ -19,7 +19,8 @@
     text-align: center;
     font-size: 30px;
     background-color: var(--bloco_03);
-    border-radius: 80px;   
+    border-radius: 80px;  
+    margin: 0px; 
    
 }
 
@@ -33,18 +34,29 @@
     position: relative;
     color: #FFFFFF;
     margin: 15px;
+    font-size: 50px;
     
     
 
 }
 
 .teste {
-    background-color: #FFFFFF;
+    background-color: #fffffff1;
+    border: solid 1px #000;
+    border-radius: 15px;
     padding: 15px;
     align-items:center;
     display: flex;
     margin-bottom: 20PX;
     width: 40%;
+    margin: 5px;
+}
+
+.teste h3{
+    font-size: 25px;
+}
+.teste p{
+    font-size: 20px;
 }
 
 #PizzaSalgada, #PizzaDoce, #Bebidas{
@@ -54,3 +66,9 @@
   
 }
 
+@media(max-width:500px){
+    #fundo_c{
+        flex-wrap: wrap;
+
+    }
+}

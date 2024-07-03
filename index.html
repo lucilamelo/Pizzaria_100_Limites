@@ -15,12 +15,57 @@
 
             <div id="logo"> PIZZARIA 💯 LIMITES</div>
 
-            <ul>
-                <li class="box"> <a href="./index.html"> Home </a></li>
-                <li class="box"> <a href="./Cardapio.html"> Cardápio </a></li>
-                <li class="box"> <a href="./Contatos.html"> Contatos</a></li>
-                <li class="box"> <a href="./SobreNos.html"> Sobre Nós</a></li>
-            </ul>
+
+
+            <div class="MENU">
+
+                <input type="checkbox" id="btt_menu">
+                <label for="btt_menu"> &#9776; </label>
+
+                <div class="nav">
+                    <ul>
+                        <li class="box"> <a href="./index.html"> Home </a></li>
+
+                        <li class="dropdown">
+                            <a href="" class="drop_btt">Cardápio &#9660;</a>
+
+                            <div class="dropdown-menu">
+                                <a href="./Cardapio.html#PizzaSalgada">Pizzas Salgadas</a>
+                                <a href="./Cardapio.html#PizzaDoce">Pizzas Doce</a>
+                                <a href="./Cardapio.html#Bebidas">Bedidas</a>
+                            </div>
+
+                        <li class="box"> <a href="./Contatos.html"> Contatos</a></li>
+                        <li class="box"> <a href="./SobreNos.html"> Sobre Nós</a></li>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="fade">
+                <img src="img/carrossel-1.jpg">
+            </div>
+
+            <div class="fade">
+                <img src="img/carrossel-2.jpg">
+            </div>
+
+            <div class="fade">
+                <img src="img/carrossel-3.jpg">
+            </div>
+
+            <a class="prev" onclick="plus_slides(n=-1)"> &#10094; </a>
+            <a class="next" onclick="plus_slides(1)"> &#10095; </a>
+
+            <div class="dot_box">
+                <span class="dot" onclick="current_slides(1)"></span>
+                <span class="dot" onclick="current_slides(2)"></span>
+                <span class="dot" onclick="current_slides(3)"></span>
+            </div>
         </div>
 
 
@@ -36,16 +81,15 @@
 
                 <button onclick="pedidos()">
                     <img src="img/pizza_button.png">
-                    <h3>PEÇA ONLINE AGORA</h3>
+                    <h3>PEÇA ONLINE</h3>
                 </button>
             </div>
 
             <div class="containe">
                 <div class="box-1"><a href="./Cardapio.html#PizzaSalgada"><img src="./img/pizza-salgada.png"
-                            alt="Pizza Salgada"><br> PIZZA
-                        SALGADA</a> </div>
+                            alt="Pizza Salgada"><br> PIZZA SALGADA</a> </div>
                 <div class="box-2"><a href="./Cardapio.html#PizzaDoce"><img src="./img/pizza-doce.png"
-                            alt="Pizza Docê"><br>PIZZA DOCÊ</a></div>
+                            alt="Pizza Docê"><br>PIZZA DOCE</a></div>
                 <div class="box-3"><a href="./Cardapio.html#Bebidas"><img src="./img/suco-de-laranja.png"
                             alt="Refrigerante"><br>BEBIDAS</a>
                 </div>
