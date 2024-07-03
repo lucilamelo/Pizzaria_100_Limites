@@ -2,8 +2,7 @@
 #fundo_c {
     width: 100%;
     height: auto;
-    background: url("../img/fundo_c.jpg");
-    
+    background: url("../img/fundo_c.jpg");   
     
 }
 
@@ -34,8 +33,7 @@
     position: relative;
     color: #FFFFFF;
     margin: 15px;
-    font-size: 50px;
-    
+    font-size: 50px; 
     
 
 }
@@ -66,9 +64,44 @@
   
 }
 
-@media(max-width:500px){
-    #fundo_c{
-        flex-wrap: wrap;
-
+@media(max-width: 800px){
+    label[for="btt_menu"]{
+        display: block;
     }
+    label[for="btt_menu"]{
+        font-size: 40px;    
+    }
+
+    body{
+        width: 50%;
+    }  
+    
+   #fundo_c{
+    flex-wrap: wrap;
+   }
+   .teste {
+    background-color: #fffffff1;
+    border: solid 1px #000;
+    border-radius: 10px;
+    padding: 10px;   
+    display: flex;
+    margin-bottom: 10PX;
+    width: 50%;
+    margin: 5px;
+}
+
+.teste h3{
+    font-size: 15px;
+}
+.teste p{
+    font-size: 10px;
+}
+
+#fundo_c img{
+    padding-right: 5px;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
 }
