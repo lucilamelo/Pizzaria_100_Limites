@@ -18,6 +18,9 @@
     font-size: 25px;
 }
 
+#form_box h4 {
+    text-align: center;
+}
 
 .f_line {
     display: flex;

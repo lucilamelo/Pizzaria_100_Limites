@@ -2,7 +2,7 @@
     --main_01: #ffffff;
     --head_02: #f82b2b;
     --bloco_03: #a59c9c;
-    --menu_04: #4d9e39b2;
+    --menu_04: #175508b2;
 }
 
 body{
@@ -13,20 +13,42 @@ body{
 }
 
 .header {
-    background-color: #FFFFFF;
+    background-color: var(--main_01);
     
 }
 
- #logo{
-    color: var(--menu_04);
-    text-align: center;
-    font-size: 70px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.bv{
+    background-color: #aa1212;
+    display: flex;
+    justify-content: space-around;
+    
+}
 
+.bv h2, .bv h3{
+    padding: 5px;
+    color: #ffffff;
+    padding-left: 30px;
+}
+
+
+
+.contato{
+    align-items: center;
+}
+
+ #logo img{
+    border-radius: 80px;    
+    padding: 10px;
+   
+}
+.contato img{
+    width: 35px;
+    padding-left: 10%;
+    
 }
 
 .main ul{ 
-    background-color: var(--head_02);
+  
     align-items: center;
     display: flex;
     justify-content:center;
@@ -39,31 +61,25 @@ body{
 
 .box a:hover{
     transition: 0.5s;
-    background-color: var(--menu_04);
+    background-color: var(--head_02);
     padding: 5px;
     border-radius: 5px;
 }
 
 .main a{
     color: var(--main_01);
-    text-decoration: none;
-    padding: 5px;
-    font-size: 25px;
-   
     
+    padding: 5px;
+    font-size: 25px;     
 }
 
 .main li{
     padding-right: 20px;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
-
 #btt_menu{
-    display: none;
-    background-color:var(--head_02) ;
-    
+    display: none;   
 }
 
 label[for="btt_menu"]{
@@ -75,7 +91,7 @@ label[for="btt_menu"]{
 }
 
 .MENU {
-    background-color: var(--head_02) ;
+    background-color:var(--menu_04) ;
     margin: auto;
     padding: 1px;
     width: 100%;
@@ -83,8 +99,7 @@ label[for="btt_menu"]{
     text-align: center;
 }
 
-.nav {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.nav {    
     font-style: oblique;
     display: flex;
     justify-content: center;
@@ -95,8 +110,7 @@ label[for="btt_menu"]{
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
-    background-color: var(--menu-footer-bg-color);
+    overflow: hidden;   
 }
 
 .nav li{
@@ -104,8 +118,7 @@ label[for="btt_menu"]{
 }
 
 li a, .drop_btt{
-    display: inline-block;
-    color: var(--text-a-color);
+    display: inline-block;   
     text-align: center;
     padding: 20px 16px;
     text-decoration: none;
@@ -119,7 +132,7 @@ li:hover, .dropdown:hover, .drop_btt:hover{
     display: none;
     position: absolute;
     z-index: 1;
-    background-color: var(--head_02) ;
+    background-color:var(--menu_04);
     min-width: 160px;
 }
 
@@ -131,7 +144,7 @@ li:hover, .dropdown:hover, .drop_btt:hover{
 }
 
 .dropdown-menu a:hover{
-    background-color: var(--menu_04);
+    background-color: var(--head_02);
 }
 
 .dropdown:hover .dropdown-menu {
@@ -144,18 +157,15 @@ li:hover, .dropdown:hover, .drop_btt:hover{
 }
 
 .fundo {
-    background: url("../img/PizzariaFundo-03.webp") no-repeat;
-    width: 100%;
+    background: url("../img/PizzariaFundo-03.webp") no-repeat;   
     height: auto;
+    background-size: cover;
 }
-
-
 
 .containe{
     padding: 15px;
     display: flex;
-    justify-content: space-around;
-    height: 100px;
+    justify-content: space-around;   
     align-items: end;
     flex-wrap: wrap;
 }
@@ -182,7 +192,7 @@ li:hover, .dropdown:hover, .drop_btt:hover{
 }
 
 .box-1 a:hover, .box-2 a:hover, .box-3 a:hover {
-    color:var(--menu_04)
+    color:var(--head_02);
 }
 
 .movimento{
@@ -205,10 +215,16 @@ li:hover, .dropdown:hover, .drop_btt:hover{
     width: 200px;
 }
 
+#imagens img{
+    width: 8%;
+    height: 8%;
+    
+}
+
 .footer{
-    background-color: black;
+    background-color:#ffffff;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     padding: 3px;
     font-size: 15px;
 }
@@ -235,15 +251,15 @@ li:hover, .dropdown:hover, .drop_btt:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: none; /* Adicione qualquer estilo de fundo necessário */
-    border: none; /* Adicione qualquer estilo de borda necessário */
+    background: none;
+    border: none; 
     cursor: pointer;
     background-color: #ffffff;
     border-radius: 15px;
 }
 
 .chamada button img {
-    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    margin-right: 10px; 
     width: 40px;
 }
 
@@ -259,6 +275,12 @@ li:hover, .dropdown:hover, .drop_btt:hover{
     transition: 0.5s;
     background-color: #ac0d0d;
 }
+
+.produtos h1{
+    color: #ac0d0d;
+    margin: 20px;
+}
+
 
 
 
@@ -289,10 +311,9 @@ li:hover, .dropdown:hover, .drop_btt:hover{
     transition: 0.6s;
 }
 
-
 .dot_box{
     text-align: center;
-    background-color: var(--head_02) ;      
+    background-color:  var(--head_02) ;    
    
 }
 
@@ -315,7 +336,8 @@ li:hover, .dropdown:hover, .drop_btt:hover{
     -webkit-animation-name: fade;
     -webkit-animation-duration: 2s;
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 2s;    
+    height: 200px;
 }
 
 @-webkit-keyframes fade{

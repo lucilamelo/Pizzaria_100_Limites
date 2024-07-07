@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria 100 Limites</title>
-    <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/contatos.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <script src="js/script.js" defer></script>
 </head>
 
@@ -14,7 +14,17 @@
     <div class="header">
         <div class="main">
 
-            <div id="logo"> PIZZARIA 💯 LIMITES</div>
+            <div class="bv">
+                <div id="logo"> <img src="img/logo.jpg"></div>
+
+                <div class="contato">
+                    <h2>Bem Vindo(a). Faça seu <a href="">Login</a> ou <a href=""> Cadastre-se</h2></a>
+                    <h3>Contatos: (16)99205-6010 - (16)3701-3431</h3>
+                    <a href=""><img src="img/icons8-facebook-novo-48.png"></a>
+                    <a href=""><img src="img/icons8-instagram-48.png"></a>
+                    <a href=""><img src="img/icons8-whatsapp-48.png"></a>
+                </div>
+            </div>
 
             <div class="MENU">
 
@@ -26,12 +36,12 @@
                         <li class="box"> <a href="./index.html"> Home </a></li>
 
                         <li class="dropdown">
-                            <a href="" class="drop_btt">Cardápio &#9660;</a>
+                            <a href="./Cardapio.html" class="drop_btt">Cardápio &#9660;</a>
 
                             <div class="dropdown-menu">
-                                <a href="./Cardapio.html#PizzaSalgada">Pizzas Salgadas</a>
-                                <a href="./Cardapio.html#PizzaDoce">Pizzas Doce</a>
-                                <a href="./Cardapio.html#Bebidas">Bedidas</a>
+                                <a href="./Cardapio.html#PizzaSalgadaH2">Pizzas Salgadas</a>
+                                <a href="./Cardapio.html#PizzaDoceH2">Pizzas Doce</a>
+                                <a href="./Cardapio.html#BebidasH2">Bedidas</a>
                             </div>
 
                         <li class="box"> <a href="./Contatos.html"> Contatos</a></li>
@@ -48,6 +58,7 @@
             
             <div id="form_box">
                 <h3>Entre em contato <span> com a PIZZARIA 💯 LIMITES</span></h3>
+                <h4> Me conta se você gostou, amou, pirou ou se vai indicar para sua mãe? </h4>
 
                 <p id="f_alert">
                     Os campos não foram preenchidos corretamente!
@@ -89,7 +100,7 @@
 
                     <div class="f_line">
                         <span>
-                            <input type="submit" id="btt_form" value="Cadastrar" onclick="validacao()">
+                            <input type="submit" id="btt_form" value="Finalizar" onclick="validacao()">
                         </span>
                     </div>
                 </form>

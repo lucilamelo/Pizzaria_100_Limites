@@ -39,9 +39,16 @@ function pedidos(){
       }, 1000);
 }
 
+// function start(){
+//     setTimeout(function() {
+//         window.location.replace("https://github.com/lucilamelo");
+//       }, 1000);
+// }
+
 var slide_index = 1;
 
 show_slides(slide_index);
+// start(slide_index);
 
 // Avança ou retorna a imagem do carrossel
 function plus_slides(n){

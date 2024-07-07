@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria 100 Limites</title>
     <link rel="stylesheet" href="css/estilo.css">
+
+
+
     <script src="js/script.js" defer></script>
 </head>
 
@@ -13,8 +16,18 @@
     <div class="header">
         <div class="main">
 
-            <div id="logo"> PIZZARIA 💯 LIMITES</div>
 
+            <div class="bv">
+                <div id="logo"> <img src="img/logo.jpg"></div>
+
+                <div class="contato">
+                    <h2>Bem Vindo(a). Faça seu <a href="">Login</a> ou <a href=""> Cadastre-se</h2></a>
+                    <h3>Contatos: (16)99205-6010 - (16)3701-3431</h3>
+                    <a href=""><img src="img/icons8-facebook-novo-48.png"></a>
+                    <a href=""><img src="img/icons8-instagram-48.png"></a>
+                    <a href=""><img src="img/icons8-whatsapp-48.png"></a>
+                </div>
+            </div>
 
 
             <div class="MENU">
@@ -27,12 +40,12 @@
                         <li class="box"> <a href="./index.html"> Home </a></li>
 
                         <li class="dropdown">
-                            <a href="" class="drop_btt">Cardápio &#9660;</a>
+                            <a href="./Cardapio.html" class="drop_btt">Cardápio &#9660;</a>
 
                             <div class="dropdown-menu">
-                                <a href="./Cardapio.html#PizzaSalgada">Pizzas Salgadas</a>
-                                <a href="./Cardapio.html#PizzaDoce">Pizzas Doce</a>
-                                <a href="./Cardapio.html#Bebidas">Bedidas</a>
+                                <a href="./Cardapio.html#PizzaSalgadaH2">Pizzas Salgadas</a>
+                                <a href="./Cardapio.html#PizzaDoceH2">Pizzas Doce</a>
+                                <a href="./Cardapio.html#BebidasH2">Bedidas</a>
                             </div>
 
                         <li class="box"> <a href="./Contatos.html"> Contatos</a></li>
@@ -47,15 +60,15 @@
 
         <div class="container">
             <div class="fade">
-                <img src="img/carrossel-1.jpg">
+                <img src="img/carr2.png">
             </div>
 
             <div class="fade">
-                <img src="img/carrossel-2.jpg">
+                <img src="img/carr1.png">
             </div>
 
             <div class="fade">
-                <img src="img/carrossel-3.jpg">
+                <img src="img/carr3.png">
             </div>
 
             <a class="prev" onclick="plus_slides(n=-1)"> &#10094; </a>
@@ -71,8 +84,6 @@
 
 
         <div class="fundo">
-            <!-- <img src="./img/Pizzaria fundo-03.webp"> -->
-
 
             <div class="chamada">
                 <h2>Sabor inigualavél <br />
@@ -80,8 +91,8 @@
                 </h2>
 
                 <button onclick="pedidos()">
+                    <h3> Opções de Pizzas </h3>
                     <img src="img/pizza_button.png">
-                    <h3>PEÇA ONLINE</h3>
                 </button>
             </div>
 
@@ -96,6 +107,12 @@
             </div>
         </div>
 
+        <div class="produtos">
+            <h1>Produtos em Ofertas!</h1>
+            <h2>Confira nossos sabores imperdiveis</h2>
+        </div>
+      
+
         <div class="movimento">
             <div class="forma-pagamento">
                 <h4>FORMAS DE PAGAMENTO </h4>
@@ -109,6 +126,11 @@
                     <li> Segunda-feira a quinta-feira 17:30 - 23:15h </li>
                     <li> Sexta-feira a Domingo 17:30 - 22:30h </li>
                 </ul>
+                <div id="imagens">
+                    <a href=""><img src="img/icons8-facebook-novo-48.png"></a>
+                    <a href=""><img src="img/icons8-instagram-48.png"></a>
+                    <a href=""><img src="img/icons8-whatsapp-48.png"></a>
+                </div>
             </div>
         </div>
 
