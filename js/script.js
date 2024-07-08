@@ -1,3 +1,25 @@
+var spanErro = document.getElementById('erro2');
+var spanLogin = document.getElementById('login');
+var spanName = document.getElementById('name');
+var users = [];
+
+
+spanLogin.innerHTML = sessionStorage.getItem('nome') ? '' : `<h2>Bem Vindo(a). 
+                                                                <span id="name"></span>
+                                                                <span id="login">Faça seu 
+                                                                    <a href="login.html">Login</a> 
+                                                                ou 
+                                                                    <a href="cadastro.html"> Cadastre-se</a>
+                                                                </span>
+                                                            </h2>`
+spanName.innerHTML = sessionStorage.getItem('nome') ? `Bem Vindo(a). 
+                                                        ${sessionStorage.getItem('nome')} 
+                                                        <button 
+                                                            style="margin-left: 10px" 
+                                                            onclick="logout()">
+                                                            Sair
+                                                        </button>` : ''
+
 function validacao(){
     let nome =document.getElementById("i_nome");
     let sobrenome = document.getElementById("i_sobrenome");
@@ -39,11 +61,35 @@ function pedidos(){
       }, 1000);
 }
 
-// function start(){
-//     setTimeout(function() {
-//         window.location.replace("https://github.com/lucilamelo");
-//       }, 1000);
-// }
+function aguarde(){
+    setTimeout(function() {
+        window.location.href = './login.html';
+      }, 3000);
+}
+
+
+
+
+function processArray() {
+    let index = 0;
+  
+    function processChunk() {
+        setTimeout(function() {
+            plus_slides(1)
+        }, 0);
+  
+      if (index < 1) {
+        index = 0
+        setTimeout(processChunk, 3000); // Chama a próxima iteração do chunk
+      } else {
+        console.log('Processing complete');
+      }
+    }
+  
+    processChunk();
+  }
+
+processArray()
 
 var slide_index = 1;
 
@@ -87,4 +133,64 @@ function show_slides(n){
 
     slides[slide_index-1].style.display = "block";
     dots[slide_index-1].className += " active";
+}
+
+function handleLogin(event) {
+    event.preventDefault();
+  
+    const username = document.querySelector('input[name="username"]').value;
+    const password = document.querySelector('input[name="password"]').value;
+  
+    var users = JSON.parse(sessionStorage.getItem('users')) ?? []
+
+    const user = users.filter(user => user.username === username && user.password === password)
+
+    if(user.length > 0){
+        sessionStorage.setItem('nome', user[0].nome)
+
+        window.location.href = './index.html';
+        return
+    }
+    spanErro.innerHTML = '<br><br>Usuario ou Senha Incorreto.' 
+}
+
+function handleCadastrar(event) {
+    event.preventDefault();
+
+    const cpf = document.querySelector('input[name="cpf"]').value;
+    const nome = document.querySelector('input[name="nome"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const username = document.querySelector('input[name="username"]').value;
+    const password = document.querySelector('input[name="password"]').value;
+  
+    const newUser = {
+        cpf,
+        nome,
+        email,
+        username,
+        password
+    }
+
+    var users = JSON.parse(sessionStorage.getItem('users')) ?? []
+
+    const userExist = users.filter(user => user.username === username)
+
+    if(userExist.length > 0){
+        spanErro.innerHTML = '<br><br>Nome de Usuario ja existe, por favor escolha outro!' 
+        return
+    }
+
+    users.push(newUser);
+
+    sessionStorage.setItem('users', JSON.stringify(users))
+    spanErro.innerHTML = '<br><br>Obrigado por se cadastrar! Aguarde você sera redirecionado para tela de login!' 
+    
+    aguarde();
+    return
+}
+
+function logout() {
+    sessionStorage.removeItem('nome');
+    window.location.href = './index.html';
+    return
 }

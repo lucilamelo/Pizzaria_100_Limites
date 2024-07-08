@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria 💯 LimItes - Admin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #343a40;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: width 0.3s;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .sidebar.active {
+            width: 60px;
+        }
+        .sidebar h2 {
+            text-align: center;
+            padding: 20px 0;
+            margin: 0;
+            background-color: #23272b;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            flex-grow: 1;
+        }
+        .sidebar ul li {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #454d55;
+            position: relative;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+        }
+        .sidebar ul li:hover {
+            background-color: #495057;
+        }
+        .submenu {
+            display: none;
+            background-color: #495057;
+        }
+        .submenu.active {
+            display: block;
+        }
+        .submenu li {
+            padding-left: 30px;
+        }
+        .toggle-btn, .logout-btn {
+            background-color: #343a40;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s;
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            width: 100%;
+            transition: margin-left 0.3s;
+        }
+        .sidebar.active ~ .main-content {
+            margin-left: 60px;
+        }
+        .sidebar .toggle-btn {
+            position: absolute;
+            bottom: 50px;
+            left: 0;
+        }
+        .sidebar .logout-btn {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .arrow {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+    </style>
+    <script src="./js/scriptAdmin.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>PIZZARIA 💯 LIMITES</h2>
+        <ul>
+            <li>
+                <a href="./administrativo.html">Home</a>
+            </li>
+            <li>
+                <a href="#services" onclick="toggleSubmenu()">Produtos<span class="arrow">▼</span></a>
+                <ul class="submenu">
+                    <li><a href="./CadastrarProduto.html">Cadastrar</a></li>
+                </ul>
+            </li>
+        </ul>
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+    <div class="main-content">
+        <h1>Bem-vindo à Pizzaria 100 Limites</h1>
+        <p>Conteúdo principal da página...</p>
+    </div>
+</body>
+</html>
