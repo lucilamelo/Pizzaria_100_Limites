@@ -8,13 +8,17 @@
     <link rel="icon" href="img/logo.jpg" type="image/png">
     <link rel="stylesheet" href="css/cardapio.css">
     <link rel="stylesheet" href="css/estilo.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            displayProdutos();
+        });
+    </script>
 </head>
 
 <body>
     <div class="header">
         <div class="main">
-
             <div class="bv">
                 <div id="logo"> <img src="img/logo.jpg"></div>
 
@@ -28,7 +32,6 @@
             </div>
 
             <div class="MENU">
-
                 <input type="checkbox" id="btt_menu">
                 <label for="btt_menu"> &#9776; </label>
 
@@ -37,7 +40,7 @@
                         <li class="box"> <a href="./index.html"> Home </a></li>
 
                         <li class="dropdown">
-                            <a href="./Cardapio.html" class="drop_btt">Cardápio &#9660;</a>
+                            Cardápio &#9660;
 
                             <div class="dropdown-menu">
                                 <a href="./Cardapio.html#PizzaSalgadaH2">Pizzas Salgadas</a>
@@ -45,10 +48,9 @@
                                 <a href="./Cardapio.html#BebidasH2">Bedidas</a>
                             </div>
 
-                        <li class="box"> <a href="./Contatos.html"> Contatos</a></li>
-                        <li class="box"> <a href="./SobreNos.html"> Sobre Nós</a></li>
+                            <li class="box"> <a href="./Contatos.html"> Contatos</a></li>
+                            <li class="box"> <a href="./SobreNos.html"> Sobre Nós</a></li>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -56,12 +58,9 @@
 
         <h1>Seja Bem vindo ao nosso Cardápio online</h1>
         <div id="fundo_c">
-            
-            <h2 id="PizzaSalgadaH2"> Pizzas Salgadas</h2>
-               
-            <div id="PizzaSalgada">
-                
 
+            <h2 id="PizzaSalgadaH2"> Pizzas Salgadas</h2>
+            <div id="PizzaSalgada">
                 <div class="teste">
                     <img src="img/p_mussarela.jpg">
                     <div id="test">
@@ -84,7 +83,8 @@
                     <img src="img/PORTUGUESA.jpg">
                     <div id="test">
                         <h3>Portuguesa</h3>
-                        <p id="descricao">Mussarela, presunto , ervilha, palmito, calabresa, cebola, ovos, bacon e tomate</p>
+                        <p id="descricao">Mussarela, presunto , ervilha, palmito, calabresa, cebola, ovos, bacon e
+                            tomate</p>
                         <p id="preco">R$65,90</p>
                     </div>
                 </div>
@@ -136,14 +136,13 @@
             </div>
 
             <h2 id="PizzaDoceH2"> Pizzas Docês</h2>
-
             <div id="PizzaDoce">
-
                 <div class="teste">
                     <img src="img/BANANA.webp">
                     <div id="test">
                         <h3>Banana Crocante</h3>
-                        <P>bananas fatiadas com creme de avelã ou Ovomaltine salpicados com castanha de caju e cerejas</P>
+                        <P>Bananas fatiadas com creme de avelã ou Ovomaltine salpicados com castanha de caju e cerejas
+                        </P>
                         <p id="preco">R$59,90</p>
                     </div>
                 </div>
@@ -152,7 +151,7 @@
                     <img src="img/MORANGO COM CHOCOLATE.webp">
                     <div id="test">
                         <h3>Morangos Negros</h3>
-                        <p> chocolate ao leite preto ou branco com lâminas de morango e raspas de chocolate</p>
+                        <p> Chocolate ao leite preto ou branco com lâminas de morango e raspas de chocolate</p>
                         <p id="preco">R$59,90</p>
                     </div>
                 </div>
@@ -161,7 +160,7 @@
                     <img src="iMG/CONFETE.jpg">
                     <div id="test">
                         <h3>Confete</h3>
-                        <p>chocolate ao leite preto ou branco com confete</p>
+                        <p>Chocolate ao leite preto ou branco com confete</p>
                         <p id="preco">R$59,90</p>
                     </div>
                 </div>
@@ -170,23 +169,19 @@
                     <img src="imG/MARACUJA COM CHOCOLATE.jpg">
                     <div id="test">
                         <h3>Maracujá com chocolate</h3>
-                        <p>chocolate ao leite branco com calda de maracujá e raspas de chocolate meio amargo</p>
+                        <p>Chocolate ao leite branco com calda de maracujá e raspas de chocolate meio amargo</p>
                         <p id="preco">R$59,90</p>
                     </div>
                 </div>
-
-               
-
             </div>
 
             <h2 id="BebidasH2">BEBIDAS</h2>
-
             <div id="Bebidas">
                 <div class="teste">
                     <img src="img/COCA.jpg">
                     <div id="test">
                         <h3>Coca-Cola</h3>
-                        <P>2 Litros e Lata 300ml</P>
+                        <P>2 Litros </P>
                         <p id="preco">R$9,90</p>
                     </div>
                 </div>
@@ -195,7 +190,7 @@
                     <img src="img/GUARANA.jpg">
                     <div id="test">
                         <h3>Guarana</h3>
-                        <p>2 Litros e Lata 300ml</p>
+                        <p>2 Litros </p>
                         <p id="preco">R$8,90</p>
                     </div>
                 </div>
@@ -208,11 +203,9 @@
                         <p id="preco">R$6,90</p>
                     </div>
                 </div>
-
-                
             </div>
         </div>
-        
+
         <div class="movimento">
             <div class="movimento2">
                 <div class="forma-pagamento">
@@ -235,15 +228,10 @@
             </div>
         </div>
 
-
         <div class="footer">
             <p> &copy; Desenvolvido por Lucila Melo - 2024</p>
         </div>
     </div>
-
-    <script>
-        displayProdutos()
-    </script>
 </body>
 
 </html>

@@ -143,6 +143,11 @@ li a, .drop_btt{
     min-width: 160px;
 }
 
+.dropdown {
+    color: var(--main_01);
+    font-size: 25px;
+}
+
 .dropdown-menu a {
     color:var(--main_01) ;
     padding: 14px 16px;
@@ -413,6 +418,10 @@ li a, .drop_btt{
 
     .nav .dropdown-menu{
         position: relative;
+    }
+
+    .dropdown-menu{
+        background-color: #38aa53c4 ;
     }
 
     .nav .dropdown-menu a{

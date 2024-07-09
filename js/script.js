@@ -3,15 +3,14 @@ var spanLogin = document.getElementById('login');
 var spanName = document.getElementById('name');
 var users = [];
 
-
 spanLogin.innerHTML = sessionStorage.getItem('nome') ? '' : `<h2>Bem Vindo(a). 
-                                                                <span id="name"></span>
-                                                                <span id="login">Faça seu 
-                                                                    <a href="login.html">Login</a> 
-                                                                ou 
-                                                                    <a href="cadastro.html"> Cadastre-se</a>
-                                                                </span>
-                                                            </h2>`
+                                                            <span id="name"></span>
+                                                            <span id="login">Faça seu 
+                                                                <a href="login.html">Login</a> 
+                                                            ou 
+                                                                <a href="cadastro.html"> Cadastre-se</a>
+                                                            </span>
+                                                        </h2>`
 spanName.innerHTML = sessionStorage.getItem('nome') ? `Bem Vindo(a). 
                                                         ${sessionStorage.getItem('nome')} 
                                                         <button 
