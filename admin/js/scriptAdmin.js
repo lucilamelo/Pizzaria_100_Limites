@@ -1,8 +1,6 @@
 var spanErro = document.getElementById('erro');
 var spanStatus = document.getElementById('status');
 
-displayProdutos()
-
 function handleLogin(event) {
   event.preventDefault();
 

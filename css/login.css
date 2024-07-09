@@ -18,7 +18,7 @@ body {
 }
 
 .login-container h1 {
-    color: #d9534f;
+    color:var(--head_02);
     margin-bottom: 20px;
 }
 
@@ -33,7 +33,7 @@ body {
 .login-container button {
     width: 30%;
     padding: 10px;
-    background-color: #d9534f;
+    background-color: var(--head_02);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -41,7 +41,7 @@ body {
 }
 
 .login-container button:hover {
-    background-color: #c9302c;
+    background-color: var(--head_02);
 }
 
 .login-container .footer {
@@ -51,6 +51,6 @@ body {
 #erro {
     justify-content: center;
     padding-top: 20px;
-    color: #c9302c;
+    color:var(--head_02);
     display: flex;
 }

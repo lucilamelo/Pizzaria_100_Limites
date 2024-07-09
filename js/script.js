@@ -77,14 +77,14 @@ function processArray() {
   
       if (index < 1) {
         index = 0
-        setTimeout(processChunk, 3000); // Chama a próxima iteração do chunk
+        setTimeout(processChunk, 5000); // Chama a próxima iteração do chunk
       } else {
         console.log('Processing complete');
       }
     }
   
     processChunk();
-  }
+}
 
 processArray()
 

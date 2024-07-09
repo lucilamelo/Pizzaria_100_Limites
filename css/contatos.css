@@ -75,7 +75,7 @@ select {
 
 #f_alert {
     display: none;
-    background-color: #fc6767;
+    background-color:var(--head_02);
     padding: 12px;
     color: #ffffff;
     border-radius: 5px;
@@ -155,7 +155,7 @@ select {
 
     #f_alert {
         display: none;
-        background-color: #fc6767;
+        background-color: var(--head_02);
         padding: 12px;
         color: #ffffff;
         border-radius: 5px;
