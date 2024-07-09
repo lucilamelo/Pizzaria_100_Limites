@@ -229,7 +229,8 @@ function displayProdutos() {
         produtoElement.appendChild(descricaoElement);
 
         if(produto.promocao){
-            precoElement.textContent = `R$ ${parseFloat(produto.preco.replace(',','.')) - 10} `;
+            let precoNovo = parseFloat(produto.preco.replace(',','.')) - 10
+            precoElement.textContent = `R$ ${precoNovo.toFixed(2).replace('.', ',')} `;
             precoElement.appendChild(promocaoElement)
         }
 

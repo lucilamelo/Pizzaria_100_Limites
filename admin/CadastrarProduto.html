@@ -127,6 +127,7 @@
 
         .form-container input[type="text"],
         .form-container input[type="file"],
+        .form-container input[type="number"],
         .form-container textarea {
             display: block;
             margin-bottom: 10px;
@@ -213,7 +214,7 @@
                 <input type="text" id="titulo" placeholder="Título do Produto" required>
                 <textarea id="descricao" placeholder="Descrição do Produto" rows="5" cols="40" required></textarea>
                 <input type="file" id="imagem" accept="image/*" required>
-                <input type="text" id="preco" placeholder="Preco do produto" required>
+                <input type="number" id="preco" step="0.01" placeholder="Preco do produto" required>
 
                 <input type="checkbox" id="promocao" name="promocao" checked />
                 <label for="promocao">Promocão</label>
