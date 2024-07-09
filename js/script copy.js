@@ -67,6 +67,9 @@ function aguarde(){
       }, 3000);
 }
 
+
+
+
 function processArray() {
     let index = 0;
   
@@ -87,6 +90,7 @@ function processArray() {
   }
 
 processArray()
+displayProdutos();
 
 var slide_index = 1;
 
@@ -191,7 +195,6 @@ function logout() {
     window.location.href = './index.html';
     return
 }
-
 
 function displayProdutos() {
     const BebidasContainer = document.querySelector('#Bebidas');

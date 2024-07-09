@@ -1,6 +1,6 @@
 :root{
     --main_01: #ffffff;
-    --head_02: #f82b2b;
+    --head_02: #ee5353;
     --bloco_03: #a59c9c;
     --menu_04: #175508b2;
 }
@@ -12,13 +12,21 @@ body{
     position: relative;
 }
 
+.btt_home{
+    background-color: var(--menu_04);
+    margin-left: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 5px;
+}
+
 .header {
     background-color: var(--main_01);
     
 }
 
 .bv{
-    background-color: #aa1212;
+    background-color:var(--head_02);
     display: flex;
     justify-content: space-around;
     
@@ -123,7 +131,7 @@ li a, .drop_btt{
     text-decoration: none;
 }
 
-li:hover, .dropdown:hover, .drop_btt:hover{
+.nav li:hover, .dropdown:hover, .drop_btt:hover{
     background-color: var(--head_02);
 }
 
@@ -207,7 +215,7 @@ li:hover, .dropdown:hover, .drop_btt:hover{
 
     padding: 15px;
     flex-wrap: wrap; 
-    background-color: #d6c7c7;
+    background-color: #ffffffff;
     align-items: center;
     justify-content: center;
 }
@@ -226,7 +234,7 @@ li:hover, .dropdown:hover, .drop_btt:hover{
 .localizacao{ 
     text-align: center;
     margin: 0px;
-    background-color: #d6c7c7 ;
+    background-color:#ffffff;
 }
 
 #imagens img{
@@ -236,7 +244,7 @@ li:hover, .dropdown:hover, .drop_btt:hover{
 }
 
 .footer{
-    background-color: #d6c7c7;
+    background-color: #ffffff;
     text-align: center;
     color: #000000;
     padding: 3px;
@@ -288,7 +296,7 @@ li:hover, .dropdown:hover, .drop_btt:hover{
 
 .chamada button:hover{
     transition: 0.5s;
-    background-color: #ac0d0d;
+    background-color: var(--head_02);
 }
 
 .container{    
