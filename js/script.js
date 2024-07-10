@@ -238,6 +238,7 @@ function displayProdutos() {
         
         divElement.appendChild(imagemElement);
         divElement.appendChild(produtoElement);
+        
 
         if(produto.categoria == 'bebida'){
             BebidasContainer.appendChild(divElement);
