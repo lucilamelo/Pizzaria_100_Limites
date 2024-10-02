@@ -68,7 +68,7 @@ function cadastrarProduto(event) {
 
           produtos.push(produto);
           localStorage.setItem(`Produtos`, JSON.stringify(produtos));
-          //limpaCampos()
+          limpaCampos()
           alert('Produto Cadastrado com sucesso!')
           displayProdutos();
       };
